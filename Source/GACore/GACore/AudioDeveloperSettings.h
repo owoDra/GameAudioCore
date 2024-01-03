@@ -25,13 +25,13 @@ public:
 	//
 	// The Default Base Control Bus Mix
 	//
-	UPROPERTY(Config, EditAnywhere, Category = "MixSettings", meta = (AllowedClasses = "/Script/AudioModulation.SoundControlBusMix"))
+	UPROPERTY(Config, EditAnywhere, Category = "MixSettings", meta = (ForceInlineRow, AllowedClasses = "/Script/AudioModulation.SoundControlBusMix"))
 	TMap<FGameplayTag, FSoftObjectPath> ControlBusMixMap;
 
 	//
 	// Mapping list of ControlBus to be assigned
 	//
-	UPROPERTY(Config, EditAnywhere, Category = "MixSettings", meta = (AllowedClasses = "/Script/AudioModulation.SoundControlBus"))
+	UPROPERTY(Config, EditAnywhere, Category = "MixSettings", meta = (ForceInlineRow, AllowedClasses = "/Script/AudioModulation.SoundControlBus"))
 	TMap<FGameplayTag, FSoftObjectPath> ControlBusMap;
 
 	//
